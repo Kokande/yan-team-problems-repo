@@ -22,6 +22,9 @@
     <height>450</height>
    </size>
   </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
    <string>Map</string>
   </property>
@@ -155,5 +158,54 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>update_b</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>409</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lattitude</sender>
+   <signal>editingFinished()</signal>
+   <receiver>update_b</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>longitude</sender>
+   <signal>editingFinished()</signal>
+   <receiver>update_b</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>397</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
